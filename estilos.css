@@ -113,7 +113,7 @@ a:hover {
 .contenido {
   flex: 30%;
   color: #e6dfe6;
-  padding-bottom: 20px;
+  padding-bottom: 60px;
 }
 
 .h2-contenido {
@@ -351,11 +351,24 @@ a:hover {
   transition: transform 1s ease;
 }
 
+.code-icon {
+  width: 50%;
+  margin-top: 40px;
+  margin-left: 90px;
+  transition: transform 1.2s ease;
+}
+
+.code-icon:hover {
+  filter: brightness(180%);
+  transform: scale(1.2);
+  transition: transform 1s ease;
+}
+
 .contenido-vj {
   flex: 30%;
   color: #e6dfe6;
   /*background-color: red;*/
-  padding-bottom: 20px;
+  padding-bottom: 60px;
 }
 
 .h2-contenido-vj {
@@ -369,7 +382,7 @@ a:hover {
   margin-left: 20px;
   font-size: 40px;
   color: #e6dfe6;
-  text-shadow: #e6dfe6;
+  text-shadow: 3px 3px 15px #8e6ead;
 }
 
 .box {
@@ -564,11 +577,24 @@ a:hover {
   transition: transform 1s ease;
 }
 
+.code-icon {
+  width: 50%;
+  margin-top: 40px;
+  margin-left: 90px;
+  transition: transform 1.2s ease;
+}
+
+.code-icon:hover {
+  filter: brightness(180%);
+  transform: scale(1.2);
+  transition: transform 1s ease;
+}
+
 .contenido-ux {
   flex: 30%;
   color: #e6dfe6;
   /*background-color: red;*/
-  padding-bottom: 20px;
+  padding-bottom: 60px;
 }
 
 .h2-contenido-ux {

@@ -160,7 +160,7 @@ a:hover{
     flex: 30%;
     color: $text-color;
     // background-color: red;//
-    padding-bottom: 20px;
+    padding-bottom: 60px;
 }
 
 .h2-contenido{
@@ -440,11 +440,24 @@ a:hover{
     transition: transform 1s ease;
 }
 
+.code-icon{
+    width: 50%;
+    margin-top: 40px;
+    margin-left: 90px;
+    transition: transform 1.2s ease;
+}
+
+.code-icon:hover{
+    filter: brightness(180%);
+    transform: scale(1.2);
+    transition: transform 1s ease;
+}
+
 .contenido-vj{
     flex: 30%;
     color: $text-color;
     /*background-color: red;*/
-    padding-bottom: 20px;
+    padding-bottom: 60px;
 }
 
 .h2-contenido-vj{
@@ -454,12 +467,13 @@ a:hover{
 }
 
 .h1-contenido-vj{
+    
     margin-top: 5px;
     margin-left: 20px;
     font-size: 40px;
     //color: #875687;//
     color: $text-color;
-    text-shadow: $text-color;
+    text-shadow: $text-shadow;
 }
 
 .box {
@@ -691,11 +705,24 @@ a:hover{
     transition: transform 1s ease;
 }
 
+.code-icon{
+    width: 50%;
+    margin-top: 40px;
+    margin-left: 90px;
+    transition: transform 1.2s ease;
+}
+
+.code-icon:hover{
+    filter: brightness(180%);
+    transform: scale(1.2);
+    transition: transform 1s ease;
+}
+
 .contenido-ux{
     flex: 30%;
     color: $text-color;
     /*background-color: red;*/
-    padding-bottom: 20px;
+    padding-bottom: 60px;
 }
 
 .h2-contenido-ux{
