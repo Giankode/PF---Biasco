@@ -354,6 +354,7 @@ a:hover {
 }
 
 .main-vj {
+  padding-left: 20px; /*--ESTO MODIFIQUE PARA QUE SE ACOMODEN LAS IMAGENES AL CENTRO--*/
   display: flex;
   flex-wrap: wrap;
   justify-content: start;
@@ -368,7 +369,7 @@ a:hover {
 
 .ux-icon {
   width: 50%;
-  margin-top: 20px;
+  margin-top: 40px;
   margin-left: 70px;
   transition: transform 1.2s ease;
 }
@@ -393,6 +394,7 @@ a:hover {
 }
 
 .contenido-vj {
+  padding-right: 40px;
   flex: 30%;
   color: #e6dfe6;
   /*background-color: red;*/
@@ -585,6 +587,7 @@ a:hover {
 }
 
 .main-ux {
+  padding-left: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: start;
@@ -624,6 +627,7 @@ a:hover {
 }
 
 .contenido-ux {
+  padding-right: 40px;
   flex: 30%;
   color: #e6dfe6;
   /*background-color: red;*/
@@ -652,7 +656,7 @@ b {
   width: 50px;
   height: 5px;
   background-color: #875687;
-  margin-left: 20px;
+  margin-left: 25px;
   margin-top: 10px;
   animation-name: boxstretch;
   animation-duration: 1.5s;
@@ -744,18 +748,19 @@ p {
   }
 }
 /*-----CSS PARA portfolio-----*/
-.img-portfolio {
-  padding: 20px;
-  flex: 30px;
-  align-items: center;
+/*.img-portfolio{
+    padding: 20px;
+    flex: 30px;
+    align-items: center;
+
 }
 
-.img-fono {
-  width: 70%;
-  margin-top: 25px;
-  margin-left: 60px;
-}
+.img-fono{
+    width: 70%;
+    margin-top: 25px;
+    margin-left: 60px;
 
+}*/
 .img-bancor {
   width: 70%;
   margin-top: 70px;
@@ -763,7 +768,8 @@ p {
 }
 
 .h2-contenido-fono {
-  margin-top: 45px;
+  padding-left: 100px;
+  margin-top: 100px;
   margin-left: 20px;
   font-size: 30px;
   color: #e6dfe6;
@@ -771,14 +777,39 @@ p {
 }
 
 .p-fono {
+  padding-left: 100px;
   margin-top: 15px;
   margin-left: 20px;
   font-size: 20px;
   line-height: 1.7;
 }
 
+.down-button {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.download {
+  display: inline-block;
+  background-color: #875687;
+  color: white;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.download:hover {
+  color: #e6dfe6;
+  filter: brightness(150%);
+}
+
 .h2-contenido-bancor {
-  margin-top: 45px;
+  padding-left: 100px;
+  margin-top: 100px;
   margin-left: 20px;
   font-size: 30px;
   color: #e6dfe6;
@@ -786,12 +817,83 @@ p {
 }
 
 .p-bancor {
+  padding-left: 100px;
   margin-top: 15px;
   margin-left: 20px;
   font-size: 20px;
   line-height: 1.7;
 }
 
+.slider-frame {
+  width: 800px;
+  height: auto;
+  margin: 50px auto 0;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.slider-frame ul {
+  margin-right: 30px;
+  display: flex;
+  padding: 0;
+  width: 300%;
+  animation: slide 15s infinite ease-in-out;
+}
+
+.slider-frame li {
+  width: 100%;
+  list-style: none;
+}
+
+.slider-frame img {
+  width: 100%;
+}
+
+@keyframes slide {
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+  50% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+  75% {
+    margin-left: 0%;
+  }
+  100% {
+    margin-left: 0%;
+  }
+}
+.boxport {
+  width: 50px;
+  height: 5px;
+  background-color: #875687;
+  margin-left: 120px;
+  margin-top: 10px;
+  animation-name: boxstretch1;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in;
+}
+
+@keyframes boxstretch1 {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 50px;
+  }
+}
 @media (max-width: 600px) {
   /* hasta los 600px tendra estas caracteristicas*/
   .img-portfolio {
@@ -800,6 +902,24 @@ p {
   }
   .p-section {
     padding-right: 20px;
+  }
+  .slider-frame {
+    width: 250px;
+  }
+  .h2-contenido-fono {
+    padding-left: 30px;
+  }
+  .p-fono {
+    padding-left: 30px;
+  }
+  .h2-contenido-bancor {
+    padding-left: 30px;
+  }
+  .p-bancor {
+    padding-left: 30px;
+  }
+  .boxport {
+    margin-left: 50px;
   }
 }
 @media (min-width: 600px) {
