@@ -106,7 +106,11 @@ body{
     padding-bottom: 25px;
     //justify-content: end;//
     //esto hace que acomode (en este caso) los links al final de la fila//
-    
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 95,5%;
+    z-index: 999;
 }
 
 
@@ -144,6 +148,7 @@ a:hover{
 }
 
 .img{
+    
     padding: 20px;
     flex: 30px;
     align-items: center;
@@ -153,7 +158,20 @@ a:hover{
     width: 60%;
     margin-top: 20px;
     margin-left: 60px;
+    
+}
 
+.arg{
+    width: 10%;
+    margin-top: 20px;
+    margin-left: 60px;
+}
+
+.p-arg{
+    display: block;
+    padding-left: 60px;
+    color: $text-color;
+    font-size: 15px;
 }
 
 .contenido{
@@ -285,9 +303,16 @@ p{
 @media (max-width: 600px){
     //( hasta los 600px tendra estas caracteristicas//
     .img{
-        flex: 100%;
+        flex: 20%;
         padding-left: 50px;
     }
+    
+    .arg{
+        width: 10%;
+        margin-top: 20px;
+        margin-left: 60px;
+    }
+
     .p-section{
         padding-right: 20px;
     }
@@ -384,7 +409,11 @@ p{
     padding-bottom: 25px;
     /*justify-content: end;*/
     /*esto hace que acomode (en este caso) los links al final de la fila*/
-    
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 95,5%;
+    z-index: 999;
 }
 
 
@@ -649,7 +678,11 @@ p{
     padding-bottom: 25px;
     /*justify-content: end;*/
     /*esto hace que acomode (en este caso) los links al final de la fila*/
-    
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 95,5%;
+    z-index: 999;
 }
 
 
@@ -842,6 +875,80 @@ p{
         flex: 100%;
         padding-left: 50px;
     }
+    .p-section{
+        padding-right: 20px;
+    
+    }
+}
+
+@media (min-width: 600px){
+    /*pasando los 600px tendra estas caracteristicas*/
+    .img{
+        flex: 20%;
+        padding-left: 50px;
+        padding-bottom: 20px;
+    }
+}
+
+
+/*-----CSS PARA portfolio-----*/
+//SCSS al portfolio//
+
+.img-portfolio{
+    padding: 20px;
+    flex: 30px;
+    align-items: center;
+}
+
+.img-fono{
+    width: 70%;
+    margin-top: 25px;
+    margin-left: 60px;
+}
+
+.img-bancor{
+    width: 70%;
+    margin-top: 70px;
+    margin-left: 60px;
+}
+
+.h2-contenido-fono{
+    margin-top: 45px;
+    margin-left: 20px;
+    font-size: 30px;
+    color: $text-color;
+    text-shadow: $text-shadow;
+}
+
+.p-fono{
+    margin-top: 15px;
+    margin-left: 20px;
+    font-size: 20px;
+    line-height: 1.7;
+}
+
+.h2-contenido-bancor{
+    margin-top: 45px;
+    margin-left: 20px;
+    font-size: 30px;
+    color: $text-color;
+    text-shadow: $text-shadow;
+}
+
+.p-bancor{
+    margin-top: 15px;
+    margin-left: 20px;
+    font-size: 20px;
+    line-height: 1.7;
+}
+
+@media (max-width: 600px){
+    /* hasta los 600px tendra estas caracteristicas*/
+    .img-portfolio{
+        flex: 100%;
+        padding-left: 10px;
+    }
+
     .p-section{
         padding-right: 20px;
     
